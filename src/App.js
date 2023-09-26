@@ -19,6 +19,7 @@ function App() {
       .then((res) => {
         let imagePath = '';
         if(res.data.weather[0].main == "Clouds"){
+          console.log("hi")
           imagePath = "/Images/clouds.png"
         }
         else if(res.data.weather[0].main == "Clear"){
